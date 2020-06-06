@@ -14,3 +14,15 @@ function header(rootDir){
         }
     });
 }
+function footer(rootDir){
+    $.ajax({
+        url: rootDir + "include/footer.html", // ディレクトリーhenkou
+        cache: false,
+        async: false,
+        dataType: 'html',
+        success: function(html){
+            html = html.replace(/\{\$root\}/g, rootDir);
+            document.write(html);
+        }
+    });
+}
