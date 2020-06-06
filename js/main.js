@@ -10,7 +10,7 @@ function head(rootDir){
         dataType: 'html',
         success: function(html){
             html = html.replace(/\{\$root\}/g, rootDir);
-            document.write(html);
+          //  document.write(html);
         }
     });
 }
