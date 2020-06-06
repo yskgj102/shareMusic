@@ -11,7 +11,6 @@ function head(rootDir){
         success: function(html){
             html = html.replace(/\{\$root\}/g, rootDir);
             document.write(html);
-            // console.log(html);
         }
     });
 }
