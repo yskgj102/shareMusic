@@ -4,7 +4,8 @@ jQuery(document).ready(function( $ ) {
 });
 function header(rootDir){
     $.ajax({
-        url: rootDir + "include/header.html", // ディレクトリー変更
+        url: rootDir + "include/header.html", // ディレクトリーhenkou
+        
         cache: false,
         async: false,
         dataType: 'html',
