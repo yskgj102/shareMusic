@@ -20,16 +20,27 @@
     navbar('');
   </script>
 
-  <!-- +++++ 01 Post +++++ -->
+
+  <!-- +++++ Post +++++ -->
   <div id="white">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
-          <h3>Books</h3>
+
+          <p>
+            <bd>June 9, 2020</bd>
+          </p>
+          <h4>apcheの謎文字化けの修正</h4>
+        <p>このページをを編集する際、macにapacheでローカルサーバーを立てて動作確認してからgithubにpushしている。
+本番環境では文字化けはしないのだがローカルで文字化けするので原因を探る。
+        </p>
+        <h3>結論</h3>
+        <p>head部分を共通化して<code><meta charset="utf-8"></code><を読み込む順序が変わったのが問題だった。。</p>
+
+
+
           <hr>
-          <p>読んだ本をずらずらまとめます</p> 読んだ本をずらずらまとめます
-          <h4>バルトークの作曲技法</h4>
-          <p><a href="bartok_analysis_music.html">Continue Reading...</a></p>
+          <p><a href="blog.html"># Back</a></p>
         </div>
 
       </div>
@@ -37,7 +48,8 @@
     </div>
     <!-- /container -->
   </div>
-  <!-- /grey -->
+  <!-- /white -->
+
 
 
   <!-- +++++ Footer Section +++++ -->
