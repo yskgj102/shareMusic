@@ -7,6 +7,20 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      <h6
+        data-authpack="show"
+        data-value="user"
+        data-trigger="present">
+            こんにちは、
+            <span
+                data-authpack="replace"
+                data-value="user.name">
+            </span>
+            さん
+            <button data-authpack="open">
+              Logout
+            </button>
+      </h6>
       <a class="navbar-brand" href="index.html">HOME</a>
     </div>
     <div class="navbar-collapse collapse">
@@ -18,6 +32,7 @@
         <li><a href="facility.html">Facility</a></li>
 
       </ul>
+
     </div>
     <!--/.nav-collapse -->
   </div>
